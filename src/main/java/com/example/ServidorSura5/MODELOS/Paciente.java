@@ -10,16 +10,16 @@ import java.util.List;
 @Entity
 @Table(name="pacientes")
 
-public class Paciente {
+public class  Paciente {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String nombre;
     private LocalDate fechaNacimiento;
-    private String correo;
     private String telefono;
+    private String correo;
     private String ips;
-    private String gripoIngresos;
+    private String grupoIngresos;
     private Boolean tienePoliza;
     private LocalDate fechaDeAfiliacion;
 
@@ -56,7 +56,7 @@ public class Paciente {
         this.correo = correo;
         this.telefono = telefono;
         this.ips = ips;
-        this.gripoIngresos = gripoIngresos;
+        this.grupoIngresos = gripoIngresos;
         this.tienePoliza = tienePoliza;
         this.fechaDeAfiliacion = fechaDeAfiliacion;
     }
@@ -110,11 +110,11 @@ public class Paciente {
     }
 
     public String getGripoIngresos() {
-        return gripoIngresos;
+        return grupoIngresos;
     }
 
     public void setGripoIngresos(String gripoIngresos) {
-        this.gripoIngresos = gripoIngresos;
+       this.grupoIngresos = gripoIngresos;
     }
 
     public Boolean getTienePoliza() {
@@ -142,7 +142,7 @@ public class Paciente {
                 ", correo='" + correo + '\'' +
                 ", telefono='" + telefono + '\'' +
                 ", ips='" + ips + '\'' +
-                ", gripoIngresos='" + gripoIngresos + '\'' +
+                ", gripoIngresos='" + grupoIngresos + '\'' +
                 ", tienePoliza=" + tienePoliza +
                 ", fechaDeAfiliacion=" + fechaDeAfiliacion +
                 '}';

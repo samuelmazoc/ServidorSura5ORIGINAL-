@@ -15,7 +15,7 @@ public class Medicamento {
     private Double dosis;
     private String laboratorio;
     private LocalDate fechaCaducidad;
-    private String cpntraIndecaciones;
+    private String contraIndecaciones;
     private String registro;
     private Boolean tienecopago;
 
@@ -37,7 +37,7 @@ public class Medicamento {
         this.dosis = dosis;
         this.laboratorio = laboratorio;
         this.fechaCaducidad = fechaCaducidad;
-        this.cpntraIndecaciones = cpntraIndecaciones;
+        this.contraIndecaciones = cpntraIndecaciones;
         this.registro = registro;
         this.tienecopago = tienecopago;
     }
@@ -91,11 +91,11 @@ public class Medicamento {
     }
 
     public String getCpntraIndecaciones() {
-        return cpntraIndecaciones;
+        return contraIndecaciones;
     }
 
     public void setCpntraIndecaciones(String cpntraIndecaciones) {
-        this.cpntraIndecaciones = cpntraIndecaciones;
+        this.contraIndecaciones = cpntraIndecaciones;
     }
 
     public String getRegistro() {
