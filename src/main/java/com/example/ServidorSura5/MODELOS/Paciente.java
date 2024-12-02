@@ -21,7 +21,7 @@ public class  Paciente {
     private String ips;
     private String grupoIngresos;
     private Boolean tienePoliza;
-    private LocalDate fechaDeAfiliacion;
+    private LocalDate fechaAfiliacion;
 
     //Crenado una relacion con la clase medico
     //Me relaciono con un medico
@@ -58,7 +58,7 @@ public class  Paciente {
         this.ips = ips;
         this.grupoIngresos = gripoIngresos;
         this.tienePoliza = tienePoliza;
-        this.fechaDeAfiliacion = fechaDeAfiliacion;
+        this.fechaAfiliacion = fechaDeAfiliacion;
     }
 
     public Long getId() {
@@ -126,11 +126,11 @@ public class  Paciente {
     }
 
     public LocalDate getFechaDeAfiliacion() {
-        return fechaDeAfiliacion;
+        return fechaAfiliacion;
     }
 
     public void setFechaDeAfiliacion(LocalDate fechaDeAfiliacion) {
-        this.fechaDeAfiliacion = fechaDeAfiliacion;
+        this.fechaAfiliacion = fechaDeAfiliacion;
     }
 
     @Override
@@ -144,7 +144,7 @@ public class  Paciente {
                 ", ips='" + ips + '\'' +
                 ", gripoIngresos='" + grupoIngresos + '\'' +
                 ", tienePoliza=" + tienePoliza +
-                ", fechaDeAfiliacion=" + fechaDeAfiliacion +
+                ", fechaDeAfiliacion=" + fechaAfiliacion +
                 '}';
     }
 }
